@@ -1,10 +1,26 @@
 # Student Progress Dashboard (EduTrack)
 
-A full-stack student learning analytics and progress tracking web application built with **React 19**, **Recharts**, **Express.js**, and **Prisma ORM (SQLite)**.
+[![Author: Vedant Khalshinge](https://img.shields.io/badge/Author-Vedant%20Khalshinge-blue?style=for-the-badge&logo=github)](https://github.com/VedantKhalshinge)
+[![Repository](https://img.shields.io/badge/GitHub-Student--Progress--Dashboard-black?style=for-the-badge&logo=github)](https://github.com/VedantKhalshinge/Student-Progress-Dashboard)
+[![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge)](LICENSE)
+
+A full-stack student learning analytics and progress tracking web application engineered and designed by **[Vedant Khalshinge](https://github.com/VedantKhalshinge)** using **React 19**, **Recharts**, **Express.js**, and **Prisma ORM (SQLite)**.
 
 EduTrack provides role-based learning portals with strict security isolation:
 - **Students** view only their own progress, interactive 30-day study charts, course completion percentages, and interactive curriculum lessons with activity tracking.
 - **Mentors** view only their assigned student cohorts and can drill down into any student's complete analytics dashboard.
+
+---
+
+## 👤 Author & Ownership Notice
+
+> [!IMPORTANT]
+> **Original Project Author**: [Vedant Khalshinge](https://github.com/VedantKhalshinge)  
+> **Source Repository**: [https://github.com/VedantKhalshinge/Student-Progress-Dashboard](https://github.com/VedantKhalshinge/Student-Progress-Dashboard)  
+> All architecture, database design, API implementations, UI components, visualizations, and documentation in this repository are the original work of Vedant Khalshinge.
+> 
+> **Anti-Plagiarism & Attribution Policy**:
+> Any academic, portfolio, or commercial reuse of this codebase requires explicit credit and attribution to the author. Re-uploading or claiming this codebase as your own without direct attribution is strictly prohibited.
 
 ---
 
@@ -63,7 +79,8 @@ EduTrack provides role-based learning portals with strict security isolation:
 
 Clone or open the project folder:
 ```bash
-cd student-progress-dashboard
+git clone https://github.com/VedantKhalshinge/Student-Progress-Dashboard.git
+cd Student-Progress-Dashboard
 ```
 
 Install backend and frontend dependencies:
@@ -171,52 +188,9 @@ All endpoints under `/api/dashboard`, `/api/lessons`, `/api/activity`, and `/api
 
 ---
 
-## Project Structure
+## 📜 License & Intellectual Property
 
-```text
-student-progress-dashboard/
-├── client/                     # Frontend (React 19, Vite, Recharts, Lucide)
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Charts.jsx             # 30-Day Line Chart & Status Donut Chart
-│   │   │   ├── CourseProgressList.jsx # Course completion % cards
-│   │   │   ├── LessonDetailModal.jsx  # Click-to-view lesson detail & event tracker
-│   │   │   ├── LessonList.jsx         # Searchable curriculum table
-│   │   │   ├── MetricsCards.jsx       # Top 4 summary metric tiles
-│   │   │   └── Navbar.jsx             # Top bar with role indicator and logout
-│   │   ├── context/
-│   │   │   └── AuthContext.jsx        # JWT state and login/logout handlers
-│   │   ├── pages/
-│   │   │   ├── LoginPage.jsx          # Login screen with quick demo accounts
-│   │   │   ├── MentorDashboard.jsx    # Mentor cohort management & student drilldown
-│   │   │   └── StudentDashboard.jsx   # Student analytics portal
-│   │   ├── api.js                     # Configured Axios instance with JWT interceptor
-│   │   ├── App.jsx                    # Route definitions and ProtectedRoute guards
-│   │   └── index.css                  # Custom styling & modern design system
-│   └── package.json
-├── server/                     # Backend (Node.js, Express, Prisma, SQLite)
-│   ├── prisma/
-│   │   ├── schema.prisma              # Data models (User, Course, Lesson, Progress, Activity)
-│   │   └── seed.js                    # Database seed script (5 students, 2 mentors, 3 courses, 30-day activity)
-│   ├── src/
-│   │   ├── middleware/
-│   │   │   └── auth.js                # JWT token authentication & role authorization
-│   │   ├── routes/
-│   │   │   ├── activity.js            # POST /api/activity
-│   │   │   ├── auth.js                # POST /api/auth/login
-│   │   │   ├── dashboard.js           # GET /api/dashboard/summary, time-series, lesson-status
-│   │   │   ├── lessons.js             # GET /api/lessons, GET /api/lessons/:id
-│   │   │   └── mentor.js              # GET /api/mentor/students and student analytics
-│   │   └── server.js                  # Express application setup and route registration
-│   └── package.json
-├── screenshots/                # Captured application screenshots
-│   ├── dashboard.png                  # Student dashboard overview
-│   ├── dashboard_full.png             # Full student dashboard
-│   ├── mentor.png                     # Mentor cohort portal
-│   ├── lesson_modal.png               # Lesson detail modal
-│   └── login.png                      # Login screen
-├── scripts/
-│   └── capture.js                     # Headless Chrome screenshot utility
-├── package.json                # Root convenience scripts (npm run seed, npm run dev)
-└── README.md                   # Complete documentation
-```
+This project is licensed under the **MIT License** with attribution requirements:
+- Copyright (c) 2026 **Vedant Khalshinge** ([https://github.com/VedantKhalshinge](https://github.com/VedantKhalshinge)).
+- You are free to inspect, review, and fork this project for evaluation purposes.
+- Any distribution, modification, or inclusion in portfolios or submissions must retain the original copyright and author notice.

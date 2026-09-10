@@ -1,7 +1,15 @@
+/**
+ * Student Progress Dashboard (EduTrack)
+ * @author Vedant Khalshinge (https://github.com/VedantKhalshinge)
+ * @license MIT
+ * Copyright (c) 2026 Vedant Khalshinge. All rights reserved.
+ */
+
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import LoginPage from './pages/LoginPage';
 import StudentDashboard from './pages/StudentDashboard';
 import MentorDashboard from './pages/MentorDashboard';
@@ -32,6 +40,7 @@ function ProtectedRoute({ children, allowedRole }) {
     <div className="app-shell">
       <Navbar />
       <main className="main-content">{children}</main>
+      <Footer />
     </div>
   );
 }
