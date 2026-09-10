@@ -1,0 +1,12 @@
+{
+  "name": "student-progress-dashboard-root",
+  "version": "1.0.0",
+  "description": "Student Progress Dashboard - Full Stack Web Application",
+  "scripts": {
+    "seed": "npm run db:seed --prefix server",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "build:client": "npm run build --prefix client",
+    "start": "node server/src/server.js"
+  }
+}
